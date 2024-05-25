@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="_bg__login_ek2_color">#FFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="don_t_have_an_account__color">#000000</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="rectangle_2_color">#BB85FB</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="white">#FFFFFFFF</color>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="app_name">Page 1</string>
+    <string name="don_t_have_an_account__string">Dont have an account?</string>
+    <string name="ek_img_content">ExportKit Image</string>
+    <string name="gcm_defaultSenderId" translatable="false">236499198726</string>
+    <string name="google_api_key" translatable="false">AIzaSyB9lv3BZu45_E6q_7nPIw_KFz3r9P4krao</string>
+    <string name="google_app_id" translatable="false">1:236499198726:android:5f25db79fbcc2f928fb487</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyB9lv3BZu45_E6q_7nPIw_KFz3r9P4krao</string>
+    <string name="google_storage_bucket" translatable="false">btladr-2df7c.appspot.com</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="pet_spa">Pet Spa</string>
+    <string name="please_enter_your_detail">Please Enter Your Detail</string>
+    <string name="project_id" translatable="false">btladr-2df7c</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="register_string">Register</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="welcome">"Welcome !"</string>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+		<item name="colorPrimary">@color/colorPrimary</item>
+		<item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+		<item name="colorAccent">@color/colorAccent</item>
+	</style>
+    <style name="Base.Theme.MyApplication" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.MyApplication" parent="Base.Theme.MyApplication"/>
+</resources>
