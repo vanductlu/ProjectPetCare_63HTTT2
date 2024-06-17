@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".rgis">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Lgin">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="889dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="352dp"
+                android:src="@drawable/image_rg" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Please Enter Your Details"
+                android:textAlignment="center"
+                android:textSize="24dp"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Email"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/txtrgemail"
+                    android:layout_width="390dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/round"
+
+                    android:hint="  Email" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Fullname"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/txtrgfullname"
+                    android:layout_width="390dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/round"
+
+                    android:hint="  Fullname" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Phone number"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/txtrgphone"
+                    android:layout_width="390dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/round"
+
+                    android:hint="  Phone number" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Password"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/txtrgpass"
+                    android:layout_width="390dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/round"
+                    android:inputType="textPassword"
+                    android:hint="  Phone number" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Confirm Password"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/txtrgcfpass"
+                    android:layout_width="390dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/round"
+                    android:hint="  Confirm Password"
+                    android:inputType="textPassword"/>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cbtemp"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="22dp"
+                    android:background="#CCCACA"
+
+
+                    android:backgroundTint="#E1DCDC" />
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:text="I agree to the terms and condition of the services"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:id="@+id/btnregis"
+                    android:layout_width="233dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="84dp"
+                    android:backgroundTint="@color/black"
+                    android:text="Register"
+
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Or login with"
+                android:textAlignment="center" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="41dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="145dp"
+                    android:src="@drawable/image_5" />
+
+                <ImageView
+                    android:layout_width="41dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/image_6" />
+
+                <ImageView
+                    android:layout_width="41dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/image_7" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:text="Already have an account ?"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/txtlgin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Login"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+</ScrollView>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
