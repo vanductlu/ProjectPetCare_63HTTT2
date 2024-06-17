@@ -17,4 +17,9 @@
     <string name="login_failed">"Login failed"</string>
     <string name="please_enter_your_detail">Please Enter Your Detail</string>
     <string name="pet_spa">Pet Spa</string>
+    <string-array name="sample_data">
+        <item>Option 1</item>
+        <item>Option 2</item>
+        <item>Option 3</item>
+    </string-array>
 </resources>

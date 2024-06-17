@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         gstbt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), Lgin.class));
+                startActivity(new Intent(getApplicationContext(), BreedingActivity.class));
             }
         });
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
