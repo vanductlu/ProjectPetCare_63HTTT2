@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "236499198726",
+    "project_id": "btladr-2df7c",
+    "storage_bucket": "btladr-2df7c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:236499198726:android:5f25db79fbcc2f928fb487",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9lv3BZu45_E6q_7nPIw_KFz3r9P4krao"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
