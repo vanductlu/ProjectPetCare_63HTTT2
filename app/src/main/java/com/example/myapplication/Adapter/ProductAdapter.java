@@ -58,6 +58,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
     public int getItemCount() {
         return productList.size();
     }
+    //change 1  sss
 
     public static class ProductViewHolder extends RecyclerView.ViewHolder {
 
