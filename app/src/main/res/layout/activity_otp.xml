@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Otp"
+    android:orientation="vertical"
+    android:layout_marginLeft="15dp">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/back"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verification Code"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:text="We sent you a code to verify your phone number. Please check your messages and enter the code below." />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@+id/otpDigit1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/roundotp"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/otpDigit2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/roundotp"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginLeft="32dp"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/otpDigit3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/roundotp"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginLeft="32dp"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/otpDigit4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/roundotp"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginLeft="32dp"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/otpDigit5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/roundotp"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginLeft="32dp"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:text="Didn't get a code?" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:text=" Resend"
+            android:textColor="#008FA3" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/verifyButton"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:text="Verify"
+        android:backgroundTint="#E26AF6"
+        android:layout_gravity="center"
+        android:textSize="18dp" />
+</LinearLayout>
