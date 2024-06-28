@@ -42,7 +42,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
-            tools:text="Mô tả ngắn gọn về sản phẩm" />
+            tools:text="Mô tả ngắn gọn về sản phẩm   " />
 
         <Button
             android:id="@+id/add_to_cart_button"
@@ -51,6 +51,9 @@
             android:layout_gravity="end"
             android:text="Add to Cart" />
 
+
     </LinearLayout>
 </androidx.cardview.widget.CardView>
-<!--12-->
+
+
+
