@@ -15,35 +15,35 @@
         android:layout_marginBottom="-30dp"
         android:padding="30dp">
 
-            <LinearLayout
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:layout_gravity="left">
+
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
+                android:text="P"
+                android:textSize="40dp"
+                android:textColor="#7A7A7A"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="et."
+                android:textSize="40dp"/>
 
-                android:layout_gravity="left">
+        </LinearLayout>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="P"
-                    android:textSize="40dp"
-                    android:textColor="#7A7A7A"
-                    />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="et."
-                    android:textSize="40dp"/>
-
-            </LinearLayout>
-
-    <ImageView
-        android:layout_width="35dp"
-        android:layout_height="30dp"
-        android:layout_gravity="center_vertical"
-        android:layout_marginLeft="240dp"
-        android:src="@drawable/filter"/>
-</LinearLayout>
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="240dp"
+            android:src="@drawable/filter"/>
+    </LinearLayout>
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="360dp"
@@ -59,7 +59,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Find Your Favorite Pet"
+            android:text="Hãy chăm sóc tốt cho thú cưng!"
             android:layout_marginTop="30dp"
             android:layout_marginLeft="20dp"
             android:textSize="20dp"
@@ -68,7 +68,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Close To You"
+            android:text="Gần gũi với thú cưng"
             android:layout_marginTop="60dp"
             android:layout_marginLeft="20dp"
             android:textStyle="bold"
@@ -80,14 +80,14 @@
         android:layout_marginTop="-20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Adopt a"
+        android:text="Nơi chăm sóc"
         android:layout_marginLeft="30dp"
         android:textSize="40dp"
         android:textColor="#1B1B1B"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Duck"
+        android:text="Thú cưng"
         android:layout_marginLeft="30dp"
         android:textSize="40dp"
         android:textColor="#1B1B1B"
@@ -131,7 +131,7 @@
             android:layout_height="60dp"
             android:layout_marginLeft="120dp"
             android:backgroundTint="@color/black"
-            android:text="Get Started"
+            android:text="Bắt đầu"
             android:textSize="15dp"
             app:cornerRadius="10dp" />
 
