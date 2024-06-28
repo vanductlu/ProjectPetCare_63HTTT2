@@ -59,7 +59,7 @@ public class BreedingActivity extends AppCompatActivity {
         search.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                startActivity(new Intent(getApplicationContext(), MapsActivity.class));
             }
         });
 
@@ -212,9 +212,9 @@ public class BreedingActivity extends AppCompatActivity {
             TextView careTipsTextView = dialog.findViewById(R.id.textViewCareTips);
             TextView harmfulFoodsTextView = dialog.findViewById(R.id.textViewHarmfulFoods);
 
-            diseasesTextView.setText("Các chứng bệnh thú cưng hay gặp: " + selectedAnimal.getDiseases());
-            checkupFrequencyTextView.setText("Mấy tháng nên khám sức khỏe 1 lần: " + selectedAnimal.getCheckupFrequency());
-            careTipsTextView.setText("Nên chăm sóc như nào là đúng cách: " + selectedAnimal.getCareTips());
+            diseasesTextView.setText("Triệu chứng hay gặp: " + selectedAnimal.getDiseases());
+            checkupFrequencyTextView.setText("Khám sức khỏe định kì: " + selectedAnimal.getCheckupFrequency());
+            careTipsTextView.setText("Chăm sóc ở nhà như nào:: " + selectedAnimal.getCareTips());
             harmfulFoodsTextView.setText("Cần tránh xa các thức ăn có hại: " + selectedAnimal.getHarmfulFoods());
 
             builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
@@ -227,7 +227,7 @@ public class BreedingActivity extends AppCompatActivity {
             AlertDialog dialogg = builder.create();
             dialogg.show();
         } else {
-            Toast.makeText(this, "No animal selected!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Không có thú cưng nào được chọn", Toast.LENGTH_SHORT).show();
         }
     }
 
