@@ -51,5 +51,8 @@
             android:layout_gravity="end"
             android:text="Add to Cart" />
 
+
     </LinearLayout>
 </androidx.cardview.widget.CardView>
+
+<!---->

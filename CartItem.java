@@ -31,3 +31,4 @@ public class CartItem implements Serializable {
         return product.getPrice() * quantity;
     }
 }//11
+//
