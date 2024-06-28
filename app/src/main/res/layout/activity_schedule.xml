@@ -69,7 +69,7 @@
             android:background="@drawable/round"
             android:padding="10dp"
             android:drawableLeft="@drawable/baseline_dew_point_24"
-            android:hint=" Triệu chứng, thuôc đang dùng, tiền sử..." />
+            android:hint=" Triệu chứng, thuốc đang dùng, tiền sử..." />
 
         <TextView
             android:id="@+id/textView2"
