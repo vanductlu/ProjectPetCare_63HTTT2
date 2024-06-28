@@ -10,7 +10,6 @@ import android.os.Build;
 import androidx.core.app.NotificationCompat;
 
 import com.example.myapplication.R;
-import com.example.myapplication.Acitivy.ScheduleActivity;
 
 
 public class AlarmReceiver extends BroadcastReceiver {
