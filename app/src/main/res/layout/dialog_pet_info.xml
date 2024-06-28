@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:background="@drawable/dialogimgbackground">
+
+    <TextView
+        android:id="@+id/textViewDiseases"
+        android:layout_width="390dp"
+        android:layout_height="84dp"
+        android:fontFamily="sans-serif-medium"
+        android:paddingBottom="8dp"
+        android:text="Triệu chứng hay gặp:"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/textViewCheckupFrequency"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="sans-serif-medium"
+        android:paddingBottom="8dp"
+        android:text="Khám sức khỏe định kì"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/textViewCareTips"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="35dp"
+        android:fontFamily="sans-serif-medium"
+        android:paddingBottom="8dp"
+        android:text="Chăm sóc ở nhà như nào"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/textViewHarmfulFoods"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_marginTop="35dp"
+        android:fontFamily="sans-serif-medium"
+        android:paddingBottom="8dp"
+        android:text="Cần tránh xa các thức ăn có hại"
+        android:textColor="@color/black"
+        android:textSize="19dp" />
+</LinearLayout>
