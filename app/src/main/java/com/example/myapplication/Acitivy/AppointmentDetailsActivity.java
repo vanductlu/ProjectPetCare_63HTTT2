@@ -42,7 +42,7 @@ public class AppointmentDetailsActivity extends AppCompatActivity {
         imageButtonBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(AppointmentDetailsActivity.this, ScheduleActivity.class));
+                startActivity(new Intent(AppointmentDetailsActivity.this, MapsActivity.class));
             }
         });
 
