@@ -159,7 +159,7 @@ public class ScheduleActivity extends AppCompatActivity {
         setAlarm(calendar.getTimeInMillis());
 
         // Chuyển sang màn hình chi tiết lịch hẹn
-        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+        Intent intent = new Intent(getApplicationContext(), AppointmentDetailsActivity.class);
         intent.putExtra("date", editTextDate.getText().toString());
         intent.putExtra("time", editTextTime.getText().toString());
         intent.putExtra("hospital_name", hospitalName);

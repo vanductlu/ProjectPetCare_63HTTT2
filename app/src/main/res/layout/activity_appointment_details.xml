@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <ImageButton
+        android:id="@+id/imageButtonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/back"
+        android:background="@color/white"/>
+
+    <TextView
+        android:id="@+id/tvHospitalName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Phiểu Khám Bệnh"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/tvQueueNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvHospitalName"
+        android:layout_centerHorizontal="true"
+        android:text="STT: 1"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/holo_green_dark"/>
+
+    <ImageView
+        android:id="@+id/qrCode"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/tvQueueNumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_qr_code_placeholder" />
+
+    <TextView
+        android:id="@+id/tvBookingStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/qrCode"
+        android:layout_centerHorizontal="true"
+        android:text="Đã đặt lịch"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_marginTop="8dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tvBookingStatus"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/tvAppointmentId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvBookingStatus"
+        android:layout_marginTop="16dp"
+        android:text="Mã phiếu khám: YMA2307200512"
+        android:textSize="16sp"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/tvPatientId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvAppointmentId"
+        android:text="Mã bệnh nhân: YMP22118599"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/tvAppointmentDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvPatientId"
+        android:text="Ngày khám: 22/07/2023"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/tvAppointmentTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvAppointmentDate"
+        android:text="Giờ khám dự kiến: 15:00 (Buổi chiều)"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:textColor="@android:color/holo_green_dark" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tvAppointmentTime"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/darker_gray" />
+</RelativeLayout>
