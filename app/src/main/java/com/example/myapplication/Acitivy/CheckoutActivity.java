@@ -90,7 +90,7 @@ public class CheckoutActivity extends AppCompatActivity {
                 .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.dismiss();
-                        goBackToStore();
+                        goBackToBarmain();
                     }
                 })
                 .setIcon(android.R.drawable.ic_dialog_info)
@@ -99,6 +99,12 @@ public class CheckoutActivity extends AppCompatActivity {
 
     private void goBackToStore() {
         Intent intent = new Intent(CheckoutActivity.this, StoreActivity.class);
+        intent.putExtra("cart", cart);
+        startActivity(intent);
+        finish();
+    }
+    private void goBackToBarmain() {
+        Intent intent = new Intent(CheckoutActivity.this, Barmain.class);
         intent.putExtra("cart", cart);
         startActivity(intent);
         finish();
