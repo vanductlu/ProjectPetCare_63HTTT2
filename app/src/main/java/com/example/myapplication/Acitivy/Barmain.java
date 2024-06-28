@@ -82,10 +82,10 @@ public class Barmain extends AppCompatActivity implements NavigationView.OnNavig
             public void onClick(View v) {
                 Intent intent = new Intent(Barmain.this, GroupDetailsActivity.class);
                 intent.putExtra("GROUP_IMAGE", R.drawable.petg1);
-                intent.putExtra("GROUP_NAME", "Meet our lovely dogs walking with us!");
-                intent.putExtra("GROUP_LOCATION", "Valencia, Spain");
-                intent.putExtra("GROUP_MEMBERS", "8 members");
-                intent.putExtra("GROUP_ORGANIZER", "Organized by Laura");
+                intent.putExtra("GROUP_NAME", "Gặp gỡ những chú chó đáng yêu của chúng tôi đi dạo cùng chúng tôi!");
+                intent.putExtra("GROUP_LOCATION", "Đống đa, Hà Nội");
+                intent.putExtra("GROUP_MEMBERS", "8 Thành viên");
+                intent.putExtra("GROUP_ORGANIZER", "Tổ chức bởi LovePet");
                 startActivity(intent);
             }
         });
@@ -96,10 +96,10 @@ public class Barmain extends AppCompatActivity implements NavigationView.OnNavig
             public void onClick(View v) {
                 Intent intent = new Intent(Barmain.this, GroupDetailsActivity.class);
                 intent.putExtra("GROUP_IMAGE", R.drawable.petg2);
-                intent.putExtra("GROUP_NAME", "Sunset Dog Walkers");
-                intent.putExtra("GROUP_LOCATION", "Barcelona, Spain");
-                intent.putExtra("GROUP_MEMBERS", "12 members");
-                intent.putExtra("GROUP_ORGANIZER", "Organized by Marco");
+                intent.putExtra("GROUP_NAME", "Dắt chó đi dạo lúc hoàng hôn");
+                intent.putExtra("GROUP_LOCATION", "Hoàng Mai, Hà Nội");
+                intent.putExtra("GROUP_MEMBERS", "12 Thành viên");
+                intent.putExtra("GROUP_ORGANIZER", "Tổ chức bởi PetLove");
                 startActivity(intent);
             }
         });
@@ -110,10 +110,10 @@ public class Barmain extends AppCompatActivity implements NavigationView.OnNavig
             public void onClick(View v) {
                 Intent intent = new Intent(Barmain.this, GroupDetailsActivity.class);
                 intent.putExtra("GROUP_IMAGE", R.drawable.petg3);
-                intent.putExtra("GROUP_NAME", "Morning Walkies");
-                intent.putExtra("GROUP_LOCATION", "Madrid, Spain");
-                intent.putExtra("GROUP_MEMBERS", "15 members");
-                intent.putExtra("GROUP_ORGANIZER", "Organized by Anna");
+                intent.putExtra("GROUP_NAME", "Đi bộ buổi sáng");
+                intent.putExtra("GROUP_LOCATION", "Hồ Đắc Di, Hà Nội");
+                intent.putExtra("GROUP_MEMBERS", "15 Thành viên");
+                intent.putExtra("GROUP_ORGANIZER", "Tổ chức bởi Đức");
                 startActivity(intent);
             }
         });
@@ -124,10 +124,10 @@ public class Barmain extends AppCompatActivity implements NavigationView.OnNavig
             public void onClick(View v) {
                 Intent intent = new Intent(Barmain.this, GroupDetailsActivity.class);
                 intent.putExtra("GROUP_IMAGE", R.drawable.petg4);
-                intent.putExtra("GROUP_NAME", "Weekend Warriors");
-                intent.putExtra("GROUP_LOCATION", "Seville, Spain");
-                intent.putExtra("GROUP_MEMBERS", "10 members");
-                intent.putExtra("GROUP_ORGANIZER", "Organized by Clara");
+                intent.putExtra("GROUP_NAME", "Chiến binh cuối tuần");
+                intent.putExtra("GROUP_LOCATION", "Tây Hồ, Hà Nội");
+                intent.putExtra("GROUP_MEMBERS", "10 Thành viên");
+                intent.putExtra("GROUP_ORGANIZER", "Tổ chức bởi Lovely");
                 startActivity(intent);
             }
         });
