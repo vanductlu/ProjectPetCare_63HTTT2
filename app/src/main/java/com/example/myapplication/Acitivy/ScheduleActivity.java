@@ -24,7 +24,6 @@ import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
-import com.example.myapplication.BC.AlarmReceiver;
 import com.example.myapplication.R;
 import com.example.myapplication.data.model.Appointment;
 import com.google.firebase.database.DatabaseReference;
@@ -157,24 +156,11 @@ public class ScheduleActivity extends AppCompatActivity {
 
         appointmentsRef.child(appointmentId).setValue(appointment);
 
-        // Đặt báo thức nếu cần
-        setAlarm(calendar.getTimeInMillis());
-
         // Chuyển sang màn hình chi tiết lịch hẹn
         Intent intent = new Intent(getApplicationContext(), AppointmentDetailsActivity.class);
         intent.putExtra("date", editTextDate.getText().toString());
         intent.putExtra("time", editTextTime.getText().toString());
         intent.putExtra("hospital_name", hospitalName);
         startActivity(intent);
-    }
-
-    private void setAlarm(long timeInMillis) {
-        AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
-        Intent intent = new Intent(this, AlarmReceiver.class);
-        PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 0, intent, PendingIntent.FLAG_IMMUTABLE);
-
-        alarmManager.setExact(AlarmManager.RTC_WAKEUP, timeInMillis, pendingIntent);
-
-        Toast.makeText(this, "Đã đặt lịch khám vào " + editTextDate.getText().toString() + " lúc " + editTextTime.getText().toString(), Toast.LENGTH_SHORT).show();
     }
 }
