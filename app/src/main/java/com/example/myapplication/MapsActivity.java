@@ -13,7 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
-//import com.example.myapplication.ScheduleActivity;
+import com.example.myapplication.ScheduleActivity;
 
 import org.osmdroid.config.Configuration;
 import org.osmdroid.util.GeoPoint;
@@ -86,7 +86,7 @@ public class MapsActivity extends AppCompatActivity {
                 @Override
                 public boolean onMarkerClick(Marker marker, MapView mapView) {
                     // Navigate to the scheduling interface and pass the hospital name
-                    Intent intent = new Intent(MapsActivity.this, MainActivity.class);
+                    Intent intent = new Intent(MapsActivity.this, ScheduleActivity.class);
                     intent.putExtra("hospital_name", hospital.getName());
                     startActivity(intent);
                     return true;
