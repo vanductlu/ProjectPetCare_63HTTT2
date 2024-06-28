@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Acitivy.Lgin">
+    tools:context=".Lgin">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -95,42 +95,6 @@
                 android:onClick="login"
                 android:textSize="22dp"
                 android:textAlignment="center" />
-        </LinearLayout>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Hoặc đăng nhập với"
-            android:textSize="18dp"
-            android:layout_marginTop="5dp"
-            android:textAlignment="center" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:onClick="openFacebookLink"
-                android:id="@+id/f"
-                android:layout_width="41dp"
-                android:layout_height="35dp"
-                android:layout_marginLeft="145dp"
-                android:src="@drawable/image_5" />
-
-            <ImageView
-                android:onClick="openGoogleLink"
-                android:id="@+id/g"
-                android:layout_width="41dp"
-                android:layout_height="35dp"
-                android:src="@drawable/image_6" />
-
-            <ImageView
-                android:onClick="openAppleLink"
-                android:id="@+id/a"
-                android:layout_width="41dp"
-                android:layout_height="35dp"
-                android:src="@drawable/image_7" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
