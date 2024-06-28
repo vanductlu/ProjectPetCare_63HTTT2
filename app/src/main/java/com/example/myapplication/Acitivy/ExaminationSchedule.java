@@ -24,13 +24,6 @@ public class ExaminationSchedule extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_examination_schedule);
-        tvHospitalName = findViewById(R.id.tvHospitalName);
-        tvDate = findViewById(R.id.tvDate);
-        tvTime = findViewById(R.id.tvTime);
-        tvQueueNumber = findViewById(R.id.tvQueueNumber);
-        tvAppointmentId = findViewById(R.id.tvAppointmentId);
-        tvPatientId = findViewById(R.id.tvPatientId);
         imageButtonBack = findViewById(R.id.imageButtonBack);
         imageButtonBack.setOnClickListener(new View.OnClickListener() {
             @Override
