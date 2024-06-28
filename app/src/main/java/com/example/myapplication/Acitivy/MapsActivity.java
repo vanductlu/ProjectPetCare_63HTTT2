@@ -1,4 +1,4 @@
-// MapsActivity.java
+
 package com.example.myapplication.Acitivy;
 
 import android.Manifest;

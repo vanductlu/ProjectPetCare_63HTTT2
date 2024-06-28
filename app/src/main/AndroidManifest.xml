@@ -59,31 +59,10 @@
             android:name=".Acitivy.CheckoutActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.AdminActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Acitivy.Otp"
-            android:exported="false" />
-        <activity
             android:name=".Acitivy.BreedingActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.FragmentBreeding"
-            android:exported="false" />
-        <activity
-            android:name=".Acitivy.MapsActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Acitivy.Resetpassword2"
-            android:exported="false" />
-        <activity
             android:name=".Acitivy.Resetpassword"
-            android:exported="false" />
-        <activity
-            android:name=".ui.MainActivity2"
-            android:exported="false" />
-        <activity
-            android:name=".ui.MainActivity"
             android:exported="false" />
         <activity
             android:name=".Acitivy.MainActivity"
@@ -100,19 +79,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".ui.login.LoginActivity"
-            android:exported="false"
-            android:label="@string/title_activity_login" />
-        <activity
-            android:name=".MainActivity2"
-            android:exported="false" />
-
         <receiver android:name=".BC.AlarmReceiver" />
 
         <activity
             android:name=".Acitivy.Barmain"
             android:exported="false" />
+
     </application>
 
 </manifest>
