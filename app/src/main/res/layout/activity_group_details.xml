@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <!-- Ảnh của nhóm -->
+    <ImageView
+        android:id="@+id/group_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sample_image" />
+
+    <!-- Tên của nhóm -->
+    <TextView
+        android:id="@+id/group_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+    <!-- Địa điểm của nhóm -->
+    <TextView
+        android:id="@+id/group_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp" />
+
+    <!-- Số lượng thành viên của nhóm -->
+    <TextView
+        android:id="@+id/group_members"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp" />
+
+    <!-- Người tổ chức nhóm -->
+    <TextView
+        android:id="@+id/group_organizer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp" />
+
+    <!-- Nút tham gia -->
+    <Button
+        android:id="@+id/join_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tham gia"
+        android:backgroundTint="#3b75df"
+        android:layout_marginTop="16dp" />
+
+    <!-- Nút quay lại trang chủ -->
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quay lại trang chủ"
+        android:backgroundTint="#3b75df"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

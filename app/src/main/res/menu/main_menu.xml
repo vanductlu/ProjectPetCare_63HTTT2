@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="Trang chủ"
+            android:icon="@drawable/home"/>
+        <item
+            android:id="@+id/nav_phieukham"
+            android:title="Phiếu khám"
+            android:icon="@drawable/phieukham"/>
+    </group>
+    <item android:title="Thông tin cá nhân">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_profile"
+                    android:title="Hồ sơ"
+                    android:icon="@drawable/profile"/>
+                <item
+                    android:id="@+id/nav_hotline"
+                    android:title="Hot line"
+                    android:icon="@drawable/hotline"/>
+            </group>
+        </menu>
+
+    </item>
+    <item android:title="Nhóm">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_walkinggGroup"
+                    android:title="Các nhóm đã tham gia"
+                    android:icon="@drawable/group"/>
+            </group>
+        </menu>
+
+    </item>
+    <item android:title="Chức năng">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_logout"
+                    android:title="Đăng xuất"
+                    android:icon="@drawable/logout"/>
+            </group>
+        </menu>
+
+    </item>
+
+</menu>
