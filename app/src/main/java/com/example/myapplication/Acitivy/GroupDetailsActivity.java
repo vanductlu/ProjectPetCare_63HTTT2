@@ -17,7 +17,6 @@ public class GroupDetailsActivity extends AppCompatActivity {
 
     private boolean isJoined = false;
     private Set<String> joinedGroupsSet;
-    private ArrayList<String> joinedGroupsList;
     private Button joinButton;
 
     @Override
@@ -33,31 +32,28 @@ public class GroupDetailsActivity extends AppCompatActivity {
         joinButton = findViewById(R.id.join_button);
         Button backToHomeButton = findViewById(R.id.back_button);
 
-        // Lấy dữ liệu từ Intent
         int imageResource = getIntent().getIntExtra("GROUP_IMAGE", R.drawable.ic_launcher_background);
         String name = getIntent().getStringExtra("GROUP_NAME");
         String location = getIntent().getStringExtra("GROUP_LOCATION");
         String members = getIntent().getStringExtra("GROUP_MEMBERS");
         String organizer = getIntent().getStringExtra("GROUP_ORGANIZER");
 
-        // Thiết lập dữ liệu cho các TextView và ImageView
         groupImage.setImageResource(imageResource);
         groupName.setText(name);
         groupLocation.setText(location);
         groupMembers.setText(members);
         groupOrganizer.setText(organizer);
 
-        // Initialize joined groups list and set
-        joinedGroupsList = new ArrayList<>();
         joinedGroupsSet = new HashSet<>(getSharedPreferences("APP_PREFS", MODE_PRIVATE).getStringSet("JOINED_GROUPS", new HashSet<>()));
 
-        // Check if already joined
         if (joinedGroupsSet.contains(name)) {
             isJoined = true;
             joinButton.setText("Đã tham gia");
+        } else {
+            isJoined = false;
+            joinButton.setText("Tham gia");
         }
 
-        // Thiết lập sự kiện nhấn cho nút "Tham gia"
         joinButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -66,10 +62,7 @@ public class GroupDetailsActivity extends AppCompatActivity {
                     joinButton.setText("Đã tham gia");
                     Toast.makeText(GroupDetailsActivity.this, "Tham gia thành công!", Toast.LENGTH_SHORT).show();
 
-                    // Add to joined groups set
                     joinedGroupsSet.add(name);
-
-                    // Save to shared preferences
                     getSharedPreferences("APP_PREFS", MODE_PRIVATE).edit().putStringSet("JOINED_GROUPS", joinedGroupsSet).apply();
                 } else {
                     Toast.makeText(GroupDetailsActivity.this, "Bạn đã tham gia nhóm này rồi!", Toast.LENGTH_SHORT).show();
@@ -77,7 +70,6 @@ public class GroupDetailsActivity extends AppCompatActivity {
             }
         });
 
-        // Thiết lập sự kiện nhấn cho nút "Quay lại trang chủ"
         backToHomeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
