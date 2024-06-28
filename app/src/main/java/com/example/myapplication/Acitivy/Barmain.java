@@ -56,7 +56,7 @@ public class Barmain extends AppCompatActivity implements NavigationView.OnNavig
         lnbr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), BreedingActivity.class));
+                startActivity(new Intent(getApplicationContext(), Barmain.class));
             }
         });
 
@@ -64,7 +64,7 @@ public class Barmain extends AppCompatActivity implements NavigationView.OnNavig
         search.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), MapsActivity.class));
+                startActivity(new Intent(getApplicationContext(), Barmain.class));
             }
         });
 
@@ -72,7 +72,7 @@ public class Barmain extends AppCompatActivity implements NavigationView.OnNavig
         btnCart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), StoreActivity.class));
+                startActivity(new Intent(getApplicationContext(), Barmain.class));
             }
         });
 
@@ -162,7 +162,7 @@ public class Barmain extends AppCompatActivity implements NavigationView.OnNavig
             Toast.makeText(this, "Bạn đã đăng xuất!", Toast.LENGTH_SHORT).show();
         }
         else if (id == R.id.nav_profile) {
-        Intent intent = new Intent(Barmain.this, Profile.class);
+        Intent intent = new Intent(Barmain.this, Barmain.class);
         startActivity(intent);
     }
         else if (id == R.id.nav_hotline) {

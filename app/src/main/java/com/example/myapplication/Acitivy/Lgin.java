@@ -56,12 +56,12 @@ public class Lgin extends AppCompatActivity {
             }
         });
 
-        quenmk.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), Resetpassword.class));
-            }
-        });
+//        quenmk.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                startActivity(new Intent(getApplicationContext(), Resetpassword.class));
+//            }
+//        });
 
         // Handle insets for system bars
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
