@@ -17,9 +17,15 @@
     <string name="login_failed">"Login failed"</string>
     <string name="please_enter_your_detail">Please Enter Your Detail</string>
     <string name="pet_spa">Pet Spa</string>
+    <string name="gi_i_thi_u">Giới thiệu:</string>
+    <string name="t_n">Tên:</string>
+    <string name="navigation_drawer_close">Close</string>">
+    <string name="navigation_drawer_open">Open</string>">
     <string-array name="sample_data">
-        <item>Option 1</item>
-        <item>Option 2</item>
-        <item>Option 3</item>
+        <item>Mèo</item>
+        <item>Chó</item>
+        <item>Thỏ</item>
     </string-array>
+
+
 </resources>
